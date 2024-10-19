@@ -1,0 +1,51 @@
+#Features
+1.Fetches weather data for cities like Delhi, Mumbai, Chennai, Bangalore, Kolkata, and Hyderabad.
+2.Stores weather data in a SQLite database.
+3.Monitors real-time temperature and triggers alerts if a threshold is crossed.
+4.Generates daily weather summaries including average, minimum, and maximum temperature and weather condition.
+5.Optionally sends email alerts when conditions are met.
+6.Visualizes temperature and humidity trends using graphs.
+
+##Requirements
+Python 3.x
+An API Key from OpenWeatherMap.
+SQLite (Python's built-in sqlite3 module is used).
+Internet connection (to fetch weather data).
+
+#Future Improvements
+1.Support for More Cities: Expand the list of cities to monitor.
+2.Advanced Alerts: Add more types of alerts based on weather conditions (e.g., high humidity, storms).
+3.Forecasts: Retrieve weather forecasts and integrate them into the system for predictions.
+4.Web Interface: Build a simple web interface for displaying the weather summaries and alerts.
+
+###Setup Instructions
+1. Get an OpenWeatherMap API Key
+Go to OpenWeatherMap and sign up for a free account.
+Once you sign up, get your API key from the "API keys" section.
+3. Add Your API Key
+Edit the app.py file and replace the placeholder in the API_KEY variable with your actual OpenWeatherMap API key:
+API_KEY = 'your_openweathermap_api_key'[enter you api key]
+
+#Install Dependencies
+pip install requests
+pip install sqlite3
+pip install time
+pip install smtplib
+pip install email.mime.text import MIMEText
+pip install matplotlib
+
+How to Run the Application
+Initialize the Database: The program automatically initializes the SQLite database (weather_data.db) to store the weather data.
+
+Run the Program:
+
+1.To start fetching weather data and monitor conditions, simply run the following command:
+2.to run program python app.py
+3.View Weather Data: The program will fetch data at regular intervals (every 10 seconds for testing) and store it in the database.
+4.Daily Summaries: At the end of each day, it will generate summaries including the average temperature, minimum temperature, maximum temperature, and dominant weather condition for each city.
+
+#output of code
+Fetching weather data for Delhi...
+Weather data fetched for Delhi: {'city': 'Delhi', 'temp': 35.0, 'feels_like': 37.0, 'humidity': 60, 'main': 'Clear'}
+Storing weather data for Delhi...
+Weather data for Delhi stored successfully!
