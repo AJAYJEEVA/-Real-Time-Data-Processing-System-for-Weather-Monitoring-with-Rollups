@@ -1,0 +1,2 @@
+# -Real-Time-Data-Processing-System-for-Weather-Monitoring-with-Rollups
+This Python program is designed to continuously fetch real-time weather data from the OpenWeatherMap API for a set of cities and store this data in a SQLite database. It also provides weather alerts if temperatures exceed a certain threshold and can generate daily summaries. and output shows:ALERT! High temperature detected in Delhi: 36.50 °C
